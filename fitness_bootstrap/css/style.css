@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic-ext);
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    color: #2c2c2c;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 95%;
+    max-width: 1060px;
+    padding: 40px 47px 60px;
+    margin: 0 auto;
+    background-color: white;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    box-shadow: -2px 0 4px #e7e7e7, 2px 0 4px #e7e7e7;
+}
+
+.wrapper h1 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 37px;
+}
+
+
+/* MENU */
+ul.left_nav a {
+    padding: 15px 35px;
+}
+.nav_footer {
+    background: #e1e1e1;
+}
+
+
+.main_wrapper {
+    margin: 40px 0 57px;
+}
+ul.side_menu {
+    border: 1px solid #c8c8c8;
+    list-style: none;
+    padding-left: 0;
+}
+.side_menu li {
+    border-bottom: 1px solid #c8c8c8;
+    line-height: 38.5px;
+}
+.side_menu li:hover {
+    padding-left: 15px;
+    background-color: #f9f9f9;
+    transition: all 0.2s;
+}
+.side_menu li:last-child {
+    border-bottom: none;
+}
+.side_menu li a {
+    padding-left: 22px;
+    color: #2c2c2c;
+}
+p.text {
+    line-height: 1.3;
+    margin-top: 36px;
+    padding: 0 26px;
+}
+.footer a {
+    color: #2c2c2c !important;
+}
+  .affix {
+      top:0;
+      width: 72%;
+      z-index: 9999 !important;
+  }
+  .navbar {
+      margin-bottom: 0px;
+  }
+
+  .affix ~ .container-fluid {
+     position: relative;
+     top: 50px;
+  }
+
+/* small screens <970px */
+@media (max-width: 970px) {
+    .menu_main.menu_main_bottom .menu_main__item {
+        display: none;
+    }
+    
+    .menu_main.menu_main_bottom .menu_main__item:last-child {
+        display: block;
+    }
+}
+
+/* extra small screens <768px */
+@media (max-width: 768px) {
+ 
+    .menu_main .menu_main__item {
+        float: none;
+        text-align: center;
+        margin: 0;
+        line-height: 30px;
+    }
+    
+    .menu_main .menu_main__submenu {
+        position: static;
+    }
+    
+    .left_panel {
+        display: none;
+    }
+
+    .main {
+        float: none;
+        width: 100%;
+    }
+
+}
